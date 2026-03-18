@@ -103,6 +103,11 @@
 			"ajv": "^6.14.0",
 			"rollup": "^4.59.0",
 			"flatted": "^3.4.1"
-		}
+		},
+		"onlyBuiltDependencies": [
+			"@tailwindcss/oxide",
+			"esbuild",
+			"maplibre-gl"
+		]
 	}
 }
