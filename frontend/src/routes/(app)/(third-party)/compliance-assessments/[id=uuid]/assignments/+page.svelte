@@ -724,7 +724,7 @@
 					</p>
 				</div>
 				<div class="flex items-center space-x-2">
-					<span class="badge bg-violet-100 text-violet-700 px-2 py-1 text-xs">
+					<span class="badge bg-sky-100 text-sky-700 px-2 py-1 text-xs">
 						{availableCheckedNodes.length}
 						{m.selected()}
 					</span>
@@ -792,7 +792,7 @@
 					<span class="text-gray-400">({m.clickToSelect()})</span>
 				</div>
 				<div class="flex items-center gap-1">
-					<span class="px-2 py-1 rounded-md bg-violet-50 border border-violet-200 text-violet-700">
+					<span class="px-2 py-1 rounded-md bg-sky-50 border border-sky-200 text-sky-700">
 						<i class="fa-solid fa-check mr-1"></i>
 						{m.selected()}
 					</span>
@@ -823,11 +823,11 @@
 			<!-- Create/Edit Assignment Card -->
 			{#if !isReadOnly}
 				<div
-					class="card bg-white shadow-lg p-4 {editingAssignmentId ? 'ring-2 ring-violet-400' : ''}"
+					class="card bg-white shadow-lg p-4 {editingAssignmentId ? 'ring-2 ring-sky-400' : ''}"
 				>
 					<h2 class="h4 font-semibold mb-4">
 						{#if editingAssignmentId}
-							<i class="fa-solid fa-pen text-violet-500 mr-2"></i>
+							<i class="fa-solid fa-pen text-sky-600 mr-2"></i>
 							{m.editAssignment()}
 						{:else}
 							<i class="fa-solid fa-plus-circle text-primary-500 mr-2"></i>
@@ -935,7 +935,7 @@
 							<div
 								class="border border-l-[3px] rounded-lg transition-all duration-200 {editingAssignmentId ===
 								assignment.id
-									? 'bg-violet-50 border-violet-300 border-l-violet-500 ring-2 ring-violet-200'
+									? 'bg-sky-50 border-sky-300 border-l-sky-500 ring-2 ring-sky-200'
 									: `bg-white hover:bg-gray-50 hover:shadow-sm ${statusAccentLeft[assignment.status] ?? 'border-l-gray-300'}`}"
 							>
 								<!-- Card body -->

@@ -208,8 +208,8 @@
 		<Tile
 			workshop={1}
 			title={m.ebiosWs1()}
-			accent_color="bg-pink-600"
-			borderColor="border-pink-600"
+			accent_color="bg-cyan-700"
+			borderColor="border-cyan-700"
 			meta={workshopsData.ws1}
 		/>
 		<Tile

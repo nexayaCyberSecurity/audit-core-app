@@ -151,7 +151,7 @@
 						{#each filteredNavigationCommands as navigationCommand, index}
 							<button
 								class="w-full flex items-center gap-3 rounded-lg px-3 py-2 text-left text-sm transition-colors cursor-pointer
-									{selected === index ? 'bg-violet-50 text-violet-900' : 'text-gray-700 hover:bg-gray-50'}"
+									{selected === index ? 'bg-sky-50 text-sky-900' : 'text-gray-700 hover:bg-gray-50'}"
 								data-cmdk-nav-btn=""
 								onmouseenter={() => {
 									selected = index;
@@ -161,13 +161,13 @@
 								{#if navigationCommand.icon}
 									<i
 										class="{navigationCommand.icon} w-4 text-center text-xs {selected === index
-											? 'text-violet-500'
+											? 'text-sky-600'
 											: 'text-gray-400'}"
 									></i>
 								{/if}
 								<span class="flex-1 truncate">{navigationCommand.label}</span>
 								{#if selected === index}
-									<span class="text-[10px] text-violet-400">↵</span>
+									<span class="text-[10px] text-sky-400">↵</span>
 								{/if}
 							</button>
 						{/each}

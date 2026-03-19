@@ -356,7 +356,7 @@
 							{/if}
 						</div>
 						<div class="flex mb-2">
-							<span class="text-xs font-mono bg-violet-700 text-white py-1 px-2 rounded-sm mr-1"
+							<span class="text-xs font-mono bg-sky-800 text-white py-1 px-2 rounded-sm mr-1"
 								>{safeTranslate(meta.entry_type)}</span
 							>
 							<a

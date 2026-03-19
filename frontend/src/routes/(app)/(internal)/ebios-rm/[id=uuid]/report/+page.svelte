@@ -89,7 +89,7 @@
 		<div class="flex flex-col gap-2 items-center">
 			<a
 				href="#workshop-1"
-				class="w-10 h-10 flex items-center justify-center rounded-lg bg-pink-600 hover:bg-pink-700 text-white font-bold transition-colors"
+				class="w-10 h-10 flex items-center justify-center rounded-lg bg-cyan-700 hover:bg-cyan-800 text-white font-bold transition-colors"
 				title="{m.workshop()} 1"
 			>
 				1
@@ -166,9 +166,9 @@
 
 	<!-- Workshop 1 -->
 	<div id="workshop-1" class="my-12 scroll-mt-20 workshop-divider">
-		<hr class="border-t-4 border-pink-600" />
+		<hr class="border-t-4 border-cyan-700" />
 		<div class="text-center -mt-5 mb-12">
-			<span class="bg-white px-6 py-2 text-xl font-bold text-pink-600">
+			<span class="bg-white px-6 py-2 text-xl font-bold text-cyan-700">
 				{m.workshop()} 1 - {m.frameTheStudy()}
 			</span>
 		</div>

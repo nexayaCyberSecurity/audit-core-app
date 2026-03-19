@@ -188,12 +188,12 @@
 						</p>
 					</div>
 					<div
-						class="flex flex-col space-y-4 p-4 bg-violet-200 border-violet-400 border rounded-md shadow-xs text-center"
+						class="flex flex-col space-y-4 p-4 bg-sky-100 border-sky-400 border rounded-md shadow-xs text-center"
 					>
 						<h4 class="font-semibold text-gray-600">{m.stakeholders()}</h4>
 						<i class="fa-solid fa-globe text-3xl"></i>
 						{#each operationalScenario.stakeholders as stakeholder}
-							<p class="badge whitespace-normal text-white bg-violet-500">
+							<p class="badge whitespace-normal text-white bg-sky-600">
 								<a class="anchor text-white" href="/stakeholders/{stakeholder.id}"
 									>{stakeholder.str}</a
 								>

@@ -208,11 +208,11 @@
 		<div class="flex-1 min-w-0 space-y-4">
 			<!-- Header -->
 			<div class="rounded-lg border border-gray-200 bg-white shadow-sm overflow-hidden">
-				<div class="bg-gradient-to-r from-violet-600 to-indigo-600 px-4 py-3">
+				<div class="bg-gradient-to-r from-sky-700 to-sky-800 px-4 py-3">
 					<div class="flex items-start gap-3">
 						<a
 							href="/presets"
-							class="mt-0.5 flex items-center justify-center w-8 h-8 rounded-md text-violet-200 hover:text-white hover:bg-white/10 transition-colors"
+							class="mt-0.5 flex items-center justify-center w-8 h-8 rounded-md text-sky-200 hover:text-white hover:bg-white/10 transition-colors"
 						>
 							<i class="fa-solid fa-arrow-left"></i>
 						</a>
@@ -255,7 +255,7 @@
 									<h2 class="text-lg font-semibold text-white">{data.journey.name}</h2>
 									<button
 										type="button"
-										class="text-violet-200 hover:text-white opacity-0 group-hover:opacity-100 transition-opacity"
+										class="text-sky-200 hover:text-white opacity-0 group-hover:opacity-100 transition-opacity"
 										onclick={startRename}
 										title={m.rename()}
 									>
@@ -265,14 +265,14 @@
 							{/if}
 							{#if data.journey.folder?.str}
 								<span
-									class="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-2.5 py-0.5 text-[11px] font-medium text-violet-100 mt-1 max-w-fit"
+									class="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-2.5 py-0.5 text-[11px] font-medium text-sky-100 mt-1 max-w-fit"
 								>
 									<i class="fa-solid fa-sitemap text-[9px]"></i>
 									<span class="truncate">{data.journey.folder.str}</span>
 								</span>
 							{/if}
 							{#if data.journey.description}
-								<p class="text-sm text-violet-100 mt-0.5">{data.journey.description}</p>
+								<p class="text-sm text-sky-100 mt-0.5">{data.journey.description}</p>
 							{/if}
 						</div>
 					</div>
@@ -423,7 +423,7 @@
 												href={link}
 												breadcrumbAction="push"
 												label={step.title}
-												class="font-medium text-gray-800 hover:text-violet-600 transition-colors"
+												class="font-medium text-gray-800 hover:text-sky-600 transition-colors"
 											>
 												{step.title}
 												<i

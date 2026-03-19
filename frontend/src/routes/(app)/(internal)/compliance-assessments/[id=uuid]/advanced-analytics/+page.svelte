@@ -175,7 +175,7 @@
 	<section class="rounded-xl border border-slate-200 bg-white overflow-hidden">
 		<div class="border-b border-slate-100 px-6 py-4 flex items-center gap-2.5">
 			<span
-				class="flex items-center justify-center w-7 h-7 rounded-md bg-violet-50 text-violet-500"
+				class="flex items-center justify-center w-7 h-7 rounded-md bg-sky-50 text-sky-600"
 			>
 				<i class="fa-solid fa-timeline text-xs"></i>
 			</span>

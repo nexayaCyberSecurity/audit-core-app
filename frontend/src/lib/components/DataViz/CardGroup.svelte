@@ -27,7 +27,7 @@
 	<!-- Group Header -->
 	<div class="flex items-center gap-3 pb-2 border-b border-gray-200">
 		{#if icon}
-			<div class="text-xl text-violet-600">
+			<div class="text-xl text-sky-700">
 				<i class={icon}></i>
 			</div>
 		{/if}

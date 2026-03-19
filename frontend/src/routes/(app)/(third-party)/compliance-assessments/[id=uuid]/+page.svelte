@@ -885,11 +885,11 @@
 												<Progress value={null}>
 													<Progress.Circle class="[--size:--spacing(5)]">
 														<Progress.CircleTrack />
-														<Progress.CircleRange class="stroke-violet-500" />
+														<Progress.CircleRange class="stroke-sky-600" />
 													</Progress.Circle>
 												</Progress>
 											{:else}
-												<i class="fa-solid fa-wand-magic-sparkles text-violet-500 text-base"></i>
+												<i class="fa-solid fa-wand-magic-sparkles text-sky-600 text-base"></i>
 											{/if}
 											<span class="text-sm font-medium">{m.suggestControls()}</span>
 										</button>
@@ -962,7 +962,7 @@
 		<div class="flex flex-row items-center font-semibold justify-between">
 			<div>
 				<span class="h4">{m.associatedRequirements()}</span>
-				<span class="badge bg-violet-400 text-white ml-1 rounded-xl">
+				<span class="badge bg-sky-500 text-white ml-1 rounded-xl">
 					{#if treeViewNodes}
 						{assessableNodesCount(treeViewNodes)}
 					{/if}

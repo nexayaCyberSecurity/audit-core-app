@@ -340,7 +340,7 @@
 				{m.addBuiltinWidget()}
 			</button>
 			<button
-				class="btn bg-violet-500 hover:bg-violet-600 text-white"
+				class="btn bg-sky-600 hover:bg-sky-700 text-white"
 				onclick={openAddCustomWidgetModal}
 			>
 				<i class="fa-solid fa-sliders"></i>

@@ -100,8 +100,8 @@
 			type: 'string',
 			field: 'object_type',
 			icon: findIconInSidebar('catalog', 'requirementMappingSets', 'fa-diagram-project'),
-			selectedClass: 'bg-gradient-to-r from-pink-500 to-pink-600 text-white shadow-pink-200',
-			hoverClass: 'hover:border-pink-400 hover:bg-pink-50',
+			selectedClass: 'bg-gradient-to-r from-cyan-500 to-cyan-600 text-white shadow-cyan-200',
+			hoverClass: 'hover:border-cyan-400 hover:bg-cyan-50',
 			label: m.requirementMappingSets()
 		},
 		is_update: {

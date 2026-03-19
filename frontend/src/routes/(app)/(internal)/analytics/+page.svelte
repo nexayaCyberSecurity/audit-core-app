@@ -824,7 +824,7 @@
 																							? 'bg-gradient-to-r from-blue-400 to-cyan-500'
 																							: assessment.progress >= 25
 																								? 'bg-gradient-to-r from-yellow-400 to-orange-500'
-																								: 'bg-gradient-to-r from-red-400 to-pink-500'}"
+																								: 'bg-gradient-to-r from-red-400 to-red-500'}"
 																					style="width: {assessment.progress}%"
 																				></div>
 																			</div>

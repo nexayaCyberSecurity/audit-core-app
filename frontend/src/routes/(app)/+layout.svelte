@@ -154,7 +154,7 @@
 		<div class="flex items-start justify-between px-4">
 			<div>
 				<div
-					class="text-2xl font-bold pb-1 bg-linear-to-r from-pink-500 to-violet-600 bg-clip-text text-transparent"
+					class="text-2xl font-bold pb-1 bg-linear-to-r from-sky-500 to-sky-700 bg-clip-text text-transparent"
 					id="page-title"
 				>
 					{safeTranslate(displayTitle)}
@@ -187,10 +187,10 @@
 				{#if data?.user?.is_admin}
 					<button
 						onclick={() => getStartedTrigger.set(true)}
-						class="shrink-0 px-3 py-1.5 rounded-full bg-violet-500 text-white text-xs font-semibold shadow-lg
-			ring-2 ring-violet-400 ring-offset-2 transition-all duration-300 hover:bg-violet-600
-			hover:ring-violet-300 hover:ring-offset-violet-100 hover:shadow-violet-500/50
-			focus:outline-hidden focus:ring-violet-500 cursor-pointer"
+						class="shrink-0 px-3 py-1.5 rounded-full bg-sky-600 text-white text-xs font-semibold shadow-lg
+			ring-2 ring-sky-400 ring-offset-2 transition-all duration-300 hover:bg-sky-700
+			hover:ring-sky-300 hover:ring-offset-sky-100 hover:shadow-sky-500/50
+			focus:outline-hidden focus:ring-sky-500 cursor-pointer"
 					>
 						<i class="fa-solid fa-rocket mr-1"></i>
 						{m.getStarted()}
@@ -206,7 +206,7 @@
 	<!-- Router Slot -->
 	<CommandPalette bind:this={commandPalette} />
 	<main
-		class="min-h-screen p-8 bg-linear-to-br from-violet-100 to-slate-200 transition-all duration-300 {classesSidebarOpen(
+		class="min-h-screen p-8 bg-linear-to-br from-sky-50 to-slate-100 transition-all duration-300 {classesSidebarOpen(
 			sidebarOpen
 		)}"
 	>

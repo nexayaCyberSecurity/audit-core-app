@@ -75,16 +75,16 @@
 		{
 			key: 'ebiosReconnaissance',
 			icon: 'fa-magnifying-glass',
-			twBg: 'bg-pink-50',
-			twBorder: 'border-pink-400',
-			twText: 'text-pink-500'
+			twBg: 'bg-cyan-50',
+			twBorder: 'border-cyan-400',
+			twText: 'text-cyan-500'
 		},
 		{
 			key: 'ebiosInitialAccess',
 			icon: 'fa-right-to-bracket',
-			twBg: 'bg-violet-50',
-			twBorder: 'border-violet-400',
-			twText: 'text-violet-500'
+			twBg: 'bg-sky-50',
+			twBorder: 'border-sky-400',
+			twText: 'text-sky-600'
 		},
 		{
 			key: 'ebiosDiscovery',

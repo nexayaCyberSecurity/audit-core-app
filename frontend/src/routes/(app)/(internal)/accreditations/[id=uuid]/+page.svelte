@@ -70,7 +70,7 @@
 		acc_simplified: 'bg-blue-300 text-blue-800',
 		acc_elaborated: 'bg-indigo-300 text-indigo-800',
 		acc_advanced: 'bg-purple-300 text-purple-800',
-		acc_sensitive: 'bg-pink-300 text-pink-800',
+		acc_sensitive: 'bg-cyan-200 text-cyan-800',
 		acc_restricted: 'bg-red-300 text-red-800',
 		other: 'bg-gray-300 text-gray-800'
 	};

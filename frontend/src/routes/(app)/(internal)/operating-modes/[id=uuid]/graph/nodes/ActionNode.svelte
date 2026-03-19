@@ -22,8 +22,8 @@
 	}>('killChainEditor');
 
 	const STAGE_CLASSES: Record<number, { border: string; accent: string }> = {
-		0: { border: 'border-pink-300', accent: 'bg-pink-400' },
-		1: { border: 'border-violet-300', accent: 'bg-violet-400' },
+		0: { border: 'border-cyan-300', accent: 'bg-cyan-400' },
+		1: { border: 'border-sky-300', accent: 'bg-sky-400' },
 		2: { border: 'border-orange-300', accent: 'bg-orange-400' },
 		3: { border: 'border-red-300', accent: 'bg-red-400' }
 	};

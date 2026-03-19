@@ -111,7 +111,7 @@
 
 			<div class="flex items-center space-x-2">
 				{#if ebiosRmStudy.ref_id}
-					<span class="badge bg-pink-200 text-pink-800 font-medium">
+					<span class="badge bg-cyan-100 text-cyan-800 font-medium">
 						{m.refIdSemiColon()}
 						{ebiosRmStudy.ref_id}
 					</span>

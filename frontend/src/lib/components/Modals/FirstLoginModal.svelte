@@ -43,13 +43,13 @@
 		style="width: min(540px, 92vw);"
 	>
 		<!-- Decorative top band -->
-		<div class="h-2 bg-gradient-to-r from-violet-500 via-fuchsia-500 to-amber-400"></div>
+		<div class="h-2 bg-gradient-to-r from-sky-600 via-cyan-500 to-sky-400"></div>
 
 		<div class="px-8 pt-8 pb-6">
 			<!-- Header area -->
 			<div class="flex items-start gap-4 mb-6">
 				<div
-					class="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center shadow-lg shadow-violet-200"
+					class="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-sky-600 to-cyan-500 flex items-center justify-center shadow-lg shadow-sky-200"
 				>
 					<i class="fa-solid fa-shield-halved text-white text-xl"></i>
 				</div>
@@ -74,7 +74,7 @@
 						disabled={loadingAction !== null}
 						class="group w-full text-left rounded-xl border-2 p-4 transition-all duration-200
 							{isPreset
-							? 'border-violet-200 bg-gradient-to-r from-violet-50 to-fuchsia-50 hover:border-violet-400 hover:shadow-md hover:shadow-violet-100'
+							? 'border-sky-200 bg-gradient-to-r from-sky-50 to-cyan-50 hover:border-sky-400 hover:shadow-md hover:shadow-sky-100'
 							: 'border-gray-150 bg-white hover:border-gray-300 hover:bg-gray-50'}
 							{loadingAction !== null && !isLoading ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}"
 					>
@@ -82,7 +82,7 @@
 							<div
 								class="flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center transition-transform duration-200 group-hover:scale-110
 								{isPreset
-									? 'bg-gradient-to-br from-violet-500 to-fuchsia-500 text-white shadow-md shadow-violet-200'
+									? 'bg-gradient-to-br from-sky-600 to-cyan-500 text-white shadow-md shadow-sky-200'
 									: i === 1
 										? 'bg-amber-100 text-amber-600'
 										: 'bg-gray-100 text-gray-500'}"
@@ -96,7 +96,7 @@
 							<div class="flex-1 min-w-0">
 								<div
 									class="font-semibold text-sm leading-tight
-									{isPreset ? 'text-violet-900' : 'text-gray-800'}"
+									{isPreset ? 'text-sky-900' : 'text-gray-800'}"
 								>
 									{action.label}
 								</div>
@@ -108,13 +108,13 @@
 							</div>
 							<i
 								class="fa-solid fa-chevron-right text-xs transition-transform duration-200 group-hover:translate-x-0.5
-								{isPreset ? 'text-violet-400' : 'text-gray-300'}"
+								{isPreset ? 'text-sky-400' : 'text-gray-300'}"
 							></i>
 						</div>
 						{#if isPreset}
 							<div class="mt-2 ml-14">
 								<span
-									class="inline-block text-[10px] font-semibold tracking-wide uppercase text-violet-500 bg-violet-100 px-2 py-0.5 rounded-full"
+									class="inline-block text-[10px] font-semibold tracking-wide uppercase text-sky-600 bg-sky-100 px-2 py-0.5 rounded-full"
 								>
 									{m.recommended()}
 								</span>

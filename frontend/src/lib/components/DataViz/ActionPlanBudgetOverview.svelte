@@ -80,7 +80,7 @@
 						? ''
 						: 'rotate-90'}"
 				></i>
-				<i class="fa-solid fa-coins text-violet-600"></i>
+				<i class="fa-solid fa-coins text-sky-700"></i>
 				<span class="text-lg font-semibold text-gray-800">{m.budgetOverview()}</span>
 				{#if collapsed}
 					<span class="text-sm text-gray-500 ml-2">{budgetData.total_annual_cost_display}</span>

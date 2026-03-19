@@ -20,15 +20,15 @@
 	let searchQuery = $state('');
 
 	const STAGE_CONFIG = [
-		{ key: 'ebiosReconnaissance', stage: 0, twText: 'text-pink-500', icon: 'fa-magnifying-glass' },
-		{ key: 'ebiosInitialAccess', stage: 1, twText: 'text-violet-500', icon: 'fa-right-to-bracket' },
+		{ key: 'ebiosReconnaissance', stage: 0, twText: 'text-cyan-500', icon: 'fa-magnifying-glass' },
+		{ key: 'ebiosInitialAccess', stage: 1, twText: 'text-sky-600', icon: 'fa-right-to-bracket' },
 		{ key: 'ebiosDiscovery', stage: 2, twText: 'text-orange-500', icon: 'fa-lightbulb' },
 		{ key: 'ebiosExploitation', stage: 3, twText: 'text-red-500', icon: 'fa-bolt' }
 	];
 
 	const STAGE_COLORS: Record<number, string> = {
-		0: 'border-pink-400 bg-pink-50',
-		1: 'border-violet-400 bg-violet-50',
+		0: 'border-cyan-400 bg-cyan-50',
+		1: 'border-sky-400 bg-sky-50',
 		2: 'border-orange-400 bg-orange-50',
 		3: 'border-red-400 bg-red-50'
 	};

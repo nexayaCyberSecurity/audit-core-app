@@ -58,7 +58,7 @@
 	</div>
 {:then counts}
 	<div class="grid grid-cols-12 gap-4 p-2">
-		<div class="col-span-7 bg-linear-to-br from-pink-200 to-pink-50 p-2 rounded">
+		<div class="col-span-7 bg-linear-to-br from-cyan-100 to-cyan-50 p-2 rounded">
 			<div class="font-bold mb-2">
 				<i class="fa-solid fa-fire-extinguisher mr-2"></i>{m.appliedControls()}
 				{#if counts.appliedControls > 0}
@@ -86,7 +86,7 @@
 			<ActivityTracker metrics={data.data.metrics} />
 		</div>
 		{#if showEmptySections || counts.tasks > 0}
-			<div class="col-span-6 bg-linear-to-br from-violet-200 to-violet-50 p-2 rounded">
+			<div class="col-span-6 bg-linear-to-br from-sky-100 to-sky-50 p-2 rounded">
 				<div class="font-bold mb-2">
 					<i class="fa-solid fa-note-sticky mr-2"></i>{m.tasks()}
 					{#if counts.tasks > 0}
@@ -159,7 +159,7 @@
 			</div>
 		{/if}
 		{#if showEmptySections || counts.riskScenarios > 0}
-			<div class="col-span-6 bg-linear-to-br from-violet-200 to-violet-50 p-2 rounded">
+			<div class="col-span-6 bg-linear-to-br from-sky-100 to-sky-50 p-2 rounded">
 				<div class="font-bold mb-2">
 					<i class="fa-solid fa-clone mr-2"></i>{m.riskScenarios()}
 					{#if counts.riskScenarios > 0}
@@ -184,7 +184,7 @@
 			</div>
 		{/if}
 		{#if showEmptySections || counts.incidents > 0}
-			<div class="col-span-6 bg-linear-to-br from-violet-200 to-violet-50 p-2 rounded">
+			<div class="col-span-6 bg-linear-to-br from-sky-100 to-sky-50 p-2 rounded">
 				<div class="font-bold mb-2">
 					<i class="fa-solid fa-bug mr-2"></i>{m.incidents()}
 					{#if counts.incidents > 0}
@@ -283,7 +283,7 @@
 			</div>
 		{/if}
 		{#if showEmptySections || counts.findings > 0}
-			<div class="col-span-6 bg-linear-to-br from-violet-200 to-violet-50 p-2 rounded">
+			<div class="col-span-6 bg-linear-to-br from-sky-100 to-sky-50 p-2 rounded">
 				<div class="font-bold mb-2">
 					<i class="fa-solid fa-triangle-exclamation mr-2"></i>{m.findings()}
 					{#if counts.findings > 0}

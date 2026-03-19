@@ -141,7 +141,7 @@
 			>
 				<button
 					type="submit"
-					class="btn bg-violet-500 hover:bg-violet-600 text-white h-fit disabled:opacity-50 disabled:cursor-not-allowed"
+					class="btn bg-sky-600 hover:bg-sky-700 text-white h-fit disabled:opacity-50 disabled:cursor-not-allowed"
 					disabled={retriggerIsLoading}
 					title="Retrigger all simulations for this study including hypotheses, portfolio data, and risk tolerance curve"
 				>

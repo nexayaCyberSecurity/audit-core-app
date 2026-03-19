@@ -102,7 +102,7 @@
 		? isLocked
 			? 'bg-gray-100 border border-gray-200'
 			: isChecked
-				? 'bg-violet-50 border border-violet-200'
+				? 'bg-sky-50 border border-sky-200'
 				: 'bg-green-50 border border-green-200 hover:bg-green-100 cursor-pointer'
 		: ''}"
 	class:pl-2={hasParentNode}
@@ -130,7 +130,7 @@
 		<!-- Leaf node checkbox -->
 		<input
 			type="checkbox"
-			class="checkbox checkbox-sm {isLocked ? '' : 'border-green-500 checked:bg-violet-500'}"
+			class="checkbox checkbox-sm {isLocked ? '' : 'border-green-500 checked:bg-sky-600'}"
 			checked={isChecked}
 			disabled={isLocked}
 			onchange={handleLeafCheckboxChange}

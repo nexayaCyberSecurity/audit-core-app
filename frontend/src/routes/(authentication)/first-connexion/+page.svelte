@@ -16,14 +16,14 @@
 	let { data }: Props = $props();
 </script>
 
-<div class="flex mx-auto justify-center items-center h-screen w-screen bg-slate-200">
+<div class="flex mx-auto justify-center items-center h-screen w-screen bg-[#0A2841]">
 	<div class="absolute top-5 left-5">
 		<div class="flex flex-row w-full space-x-4 pb-3">
 			<Logo />
 		</div>
 	</div>
 	<div class="flex w-full items-center justify-center">
-		<div id="hellothere" class="flex flex-col justify-center items-center w-3/5 text-gray-900">
+		<div id="hellothere" class="flex flex-col justify-center items-center w-3/5 text-white">
 			<Typewriter mode="loopOnce" cursor={false} interval={50}>
 				<div class="text-2xl unstyled text-center pb-4">
 					<span class="text-2xl text-center">{m.helloThere()} 👋</span>

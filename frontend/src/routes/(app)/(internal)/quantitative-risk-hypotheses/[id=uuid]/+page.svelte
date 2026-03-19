@@ -75,7 +75,7 @@
 			>
 				<button
 					type="submit"
-					class="btn bg-pink-500 text-white h-fit"
+					class="btn bg-cyan-600 text-white h-fit"
 					disabled={simulationIsLoading}
 				>
 					<span class="mr-2">

@@ -236,7 +236,7 @@ Loss of customer trust</pre>
 			{/if}
 
 			<!-- Items textarea -->
-			<div class="rounded-lg p-4 border-2 border-pink-500">
+			<div class="rounded-lg p-4 border-2 border-cyan-500">
 				<label for="items" class="block text-sm font-medium text-gray-900">
 					{typeLabels[selectedType].plural} List *
 				</label>

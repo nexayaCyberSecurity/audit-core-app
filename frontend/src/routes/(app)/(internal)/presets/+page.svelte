@@ -296,8 +296,8 @@
 				class="flex items-center gap-3 cursor-pointer"
 				onclick={() => (presetsCollapsed = !presetsCollapsed)}
 			>
-				<div class="flex items-center justify-center w-8 h-8 rounded-lg bg-violet-100">
-					<i class="fa-solid fa-box-open text-violet-600 text-sm"></i>
+				<div class="flex items-center justify-center w-8 h-8 rounded-lg bg-sky-100">
+					<i class="fa-solid fa-box-open text-sky-700 text-sm"></i>
 				</div>
 				<h2 class="text-lg font-semibold text-gray-800">{m.availablePresets()}</h2>
 				<i
@@ -350,7 +350,7 @@
 						<div
 							class="group flex flex-col rounded-xl border bg-white shadow-sm transition-all duration-200
 							{isExpanded
-								? 'border-violet-300 shadow-md ring-1 ring-violet-100'
+								? 'border-sky-300 shadow-md ring-1 ring-sky-100'
 								: 'border-gray-200 hover:shadow-md hover:border-gray-300'}"
 						>
 							<!-- Card header — always visible -->
@@ -416,7 +416,7 @@
 										type="button"
 										class="w-full flex items-center justify-center gap-2 px-4 py-2 rounded-lg text-sm font-medium
 										transition-all duration-150 cursor-pointer
-										bg-violet-600 text-white hover:bg-violet-700 active:bg-violet-800 shadow-sm"
+										bg-sky-700 text-white hover:bg-sky-800 active:bg-sky-900 shadow-sm"
 										onclick={() => applyPreset(preset.id, preset.name)}
 									>
 										<i class="fa-solid fa-play text-[10px]"></i>
