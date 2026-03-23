@@ -1,12 +1,12 @@
-# CISO Assistant Dispatcher
+# Auditcore Dispatcher
 
-The **CISO Assistant Dispatcher** is a command-line tool that bridges event-driven messaging with the CISO Assistant API to orchestrate actions based on incoming Kafka messages.
+The **Auditcore Dispatcher** is a command-line tool that bridges event-driven messaging with the Auditcore API to orchestrate actions based on incoming Kafka messages.
 
 ## Prerequisites
 
 - **Python 3.8+**
 - A running Kafka cluster (can be any Kafka-compatible cluster, e.g. [Redpanda](https://redpanda.com/))
-- Access to the CISO Assistant REST API
+- Access to the Auditcore REST API
 - Required Python packages (see [Installation](#installation) below)
 
 ## Running the dispatcher as a CLI tool
@@ -86,9 +86,9 @@ You can configure the dispatcher using environment variables, the `init-config` 
 ```bash
 DEBUG=True/False # Set to true to enable debug logging
 
-API_URL=https://localhost:8443 # The URL of the CISO Assistant REST API
-USER_EMAIL=user@company.org # The email address of the CISO Assistant user to authenticate with
-USER_PASSWORD=your_password # The password of the CISO Assistant user to authenticate with
+API_URL=https://localhost:8443 # The URL of the Auditcore REST API
+USER_EMAIL=user@company.org # The email address of the Auditcore user to authenticate with
+USER_PASSWORD=your_password # The password of the Auditcore user to authenticate with
 AUTO_RENEW_SESSION=True/False # Set to True to enable automatic token refresh, do not set if using token-based authentication
 USER_TOKEN=your_ciso_assistant_access_token # Personal Access Token, do not set if using credentials-based authentication
 VERIFY_CERTIFICATE=True/False # Set to True to verify SSL certificates between the dispatcher and API
@@ -126,20 +126,20 @@ credentials:
 
 Update this file with your actual REST API credentials.
 
-### Authentication to the CISO Assistant API
+### Authentication to the Auditcore API
 
-Use the `auth` command to authenticate with the CISO Assistant API.
+Use the `auth` command to authenticate with the Auditcore API.
 There are currently two modes of authentication supported by the dispatcher:
 
 - Token-based authentication
 - Credentials-based authentication
 
 > [!IMPORTANT]
-> Whichever mode you choose, it is tied to a CISO Assistant user and will inherit their permissions.
+> Whichever mode you choose, it is tied to a Auditcore user and will inherit their permissions.
 
 #### Token-based authentication
 
-This is done using a Personal Access Token (PAT) that you can generate in CISO Assistant.
+This is done using a Personal Access Token (PAT) that you can generate in Auditcore.
 To use token-based authentication, you need to set the `USER_TOKEN` environment variable or specify it in the configuration file or during interactive configuration definition using the `init-config` with the `-i` flag enabled.
 
 #### Credentials-based authentication
@@ -281,7 +281,7 @@ Fields:
 
 ### Selectors
 
-A selector is an object used to identify the target resource in CISO Assistant. It contains key/value pairs that are used to filter the resource. These can be any filters that are supported by the CISO Assistant API (e.g. `ref_id`, `name`, `eta`...).
+A selector is an object used to identify the target resource in Auditcore. It contains key/value pairs that are used to filter the resource. These can be any filters that are supported by the Auditcore API (e.g. `ref_id`, `name`, `eta`...).
 
 You can find the full list of supported filters in the API specification, accessible on `<CISO_ASSISTANT_API_URL>/schema/swagger/`
 
@@ -305,11 +305,11 @@ Set to `single` if not specified. This can be either `single` or `multiple`. Thi
 
 The dispatcher can be used as a CLI tool or deployed as a service. To deploy it as a service, you can use Docker or any other containerization tool.
 
-Out of the box, we provide a Dockerfile and the `make_config.py` script to generate a docker compose file containing CISO Assistant and the dispatcher.
+Out of the box, we provide a Dockerfile and the `make_config.py` script to generate a docker compose file containing Auditcore and the dispatcher.
 
 The `make_config.py` script is accessible under `config/make_config.py`. Please refer to the readme file in the `config` directory for more information on how to use it.
 
 ## Contributing
 
 > [!NOTE]
-> If CISO Assistant is deployed using the `runserver` command, do not forget to append `/api` to the URL. For example, `http://localhost:8000/api`.
+> If Auditcore is deployed using the `runserver` command, do not forget to append `/api` to the URL. For example, `http://localhost:8000/api`.

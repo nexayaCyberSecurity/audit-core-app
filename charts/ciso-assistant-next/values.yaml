@@ -1,4 +1,4 @@
-## CISO Assistant configuration
+## Auditcore configuration
 ## Ref: https://github.com/intuitem/ciso-assistant-community
 ##
 
@@ -20,11 +20,11 @@ global:
 
   # Default image used by all components
   image:
-    # -- If defined, a registry applied to all CISO Assistant deployments
+    # -- If defined, a registry applied to all Auditcore deployments
     registry: ghcr.io
-    # -- Overrides the global CISO Assistant image tag whose default is the chart appVersion
+    # -- Overrides the global Auditcore image tag whose default is the chart appVersion
     tag: ""
-    # -- If defined, a imagePullPolicy applied to all CISO Assistant deployments
+    # -- If defined, a imagePullPolicy applied to all Auditcore deployments
     imagePullPolicy: IfNotPresent
 
   # -- Secrets with credentials to pull images from a private registry
@@ -52,7 +52,7 @@ global:
 
 ## Service Account
 serviceAccount:
-  # -- Create a service account for CISO Assistant
+  # -- Create a service account for Auditcore
   create: false
   # -- Service account name
   # @default -- `""` (defaults to fullname)
@@ -64,7 +64,7 @@ serviceAccount:
   # -- Automount API credentials for the Service Account
   automountServiceAccountToken: true
 
-## CISO Assistant backend
+## Auditcore backend
 backend:
   # -- Backend container name
   name: backend
@@ -211,7 +211,7 @@ backend:
     # -- Backend service port name
     portName: http
 
-## CISO Assistant frontend
+## Auditcore frontend
 frontend:
   # -- Frontend container name
   name: frontend
@@ -286,10 +286,10 @@ frontend:
     # -- Frontend service port name
     portName: http
 
-# CISO Assistant ingress configuration
+# Auditcore ingress configuration
 # Note: host value is inherited from global.domain
 ingress:
-  # -- Enable an ingress resource for the CISO Assistant
+  # -- Enable an ingress resource for the Auditcore
   enabled: false
   # -- Additional ingress labels
   labels: {} # @schema additionalProperties: true
@@ -299,7 +299,7 @@ ingress:
     # cert-manager.io/cluster-issuer: letsencrypt
   # -- Defines which ingress controller will implement the resource
   ingressClassName: ""
-  # -- The path to CISO Assistant
+  # -- The path to Auditcore
   path: /
   # -- Ingress path type. One of `Exact`, `Prefix` or `ImplementationSpecific`
   pathType: Prefix

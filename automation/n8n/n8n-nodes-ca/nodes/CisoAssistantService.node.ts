@@ -15,13 +15,13 @@ import { resourceRegistry } from "./registry/ResourceRegistry";
 
 export class CisoAssistantService implements INodeType {
   description: INodeTypeDescription = {
-    displayName: "CISO Assistant",
+    displayName: "Auditcore",
     name: "cisoAssistantService",
     icon: "fa:robot",
     group: ["transform"],
     version: 1,
     subtitle: '={{$parameter["resource"] + ": " + $parameter["operation"]}}',
-    description: "Interact with CISO Assistant API",
+    description: "Interact with Auditcore API",
     defaults: {
       name: "CA node ",
     },
@@ -155,7 +155,7 @@ export class CisoAssistantService implements INodeType {
           {
             name: "Get Build Info",
             value: "getBuild",
-            description: "Get build information from CISO Assistant",
+            description: "Get build information from Auditcore",
             action: "Get build information",
           },
           {

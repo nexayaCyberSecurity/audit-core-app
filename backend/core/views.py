@@ -9390,7 +9390,7 @@ class ComplianceAssessmentViewSet(BaseModelViewSet):
                         specific.mailing(
                             email_template_name="tprm/third_party_email.html",
                             subject=_(
-                                "CISO Assistant: A questionnaire has been assigned to you"
+                                "Auditcore: A questionnaire has been assigned to you"
                             ),
                             object="compliance-assessments",
                             object_id=instance.id,

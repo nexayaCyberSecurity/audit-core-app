@@ -32,7 +32,7 @@ Star the project 🌟 to get releases notification and help growing the communit
 <a href="https://intuitem.gitbook.io/ciso-assistant"><img src="https://img.shields.io/static/v1?message=Documentation&logo=gitbook&logoColor=ffffff&label=%20&labelColor=5c5c5c&color=F4E28D&style=for-the-badge"></a>
 <a href="https://ca-api-doc.pages.dev/"><img src="https://img.shields.io/static/v1?message=API&logo=swagger&label=%20&style=for-the-badge"></a>
 
-CISO Assistant offers a fresh perspective on Cybersecurity Management and **GRC** (Governance, Risk, and Compliance) practices:
+Auditcore offers a fresh perspective on Cybersecurity Management and **GRC** (Governance, Risk, and Compliance) practices:
 
 - Designed as a central hub to connect multiple cybersecurity concepts with smart linking between objects,
 - Built as a **multi-paradigm** tool that adapts to different backgrounds, methodologies, and expectations,
@@ -49,9 +49,9 @@ CISO Assistant offers a fresh perspective on Cybersecurity Management and **GRC*
 
 Our vision is to create a **one-stop-shop** for cybersecurity management—modernizing GRC through **simplification** and **interoperability**.
 
-As practitioners working with cybersecurity and IT professionals, we've faced the same issues: tool fragmentation, data duplication, and a lack of intuitive, integrated solutions. CISO Assistant was born from those lessons, and we're building a community around **pragmatic**, **common-sense** principles.
+As practitioners working with cybersecurity and IT professionals, we've faced the same issues: tool fragmentation, data duplication, and a lack of intuitive, integrated solutions. Auditcore was born from those lessons, and we're building a community around **pragmatic**, **common-sense** principles.
 
-We’re constantly evolving with input from users and customers. Like an octopus 🐙, CISO Assistant keeps growing extra arms—bringing clarity, automation, and productivity to cybersecurity teams while reducing the effort of data input and output.
+We’re constantly evolving with input from users and customers. Like an octopus 🐙, Auditcore keeps growing extra arms—bringing clarity, automation, and productivity to cybersecurity teams while reducing the effort of data input and output.
 
 [![CodeFactor](https://www.codefactor.io/repository/github/intuitem/ciso-assistant-community/badge)](https://www.codefactor.io/repository/github/intuitem/ciso-assistant-community)
 [![API Tests](https://github.com/intuitem/ciso-assistant-community/actions/workflows/backend-api-tests.yml/badge.svg)](https://github.com/intuitem/ciso-assistant-community/actions/workflows/backend-api-tests.yml)
@@ -101,13 +101,13 @@ The docker compose file can be adjusted to pass extra parameters to suit your se
 
 Upcoming features are listed on the roadmap.
 
-CISO Assistant is developed and maintained by [Intuitem](https://intuitem.com/), a company specialized in Cybersecurity, Cloud, and Data/AI.
+Auditcore is developed and maintained by [Intuitem](https://intuitem.com/), a company specialized in Cybersecurity, Cloud, and Data/AI.
 
 ---
 
 ## Core Concepts
 
-Here’s an extract of some of the building blocks in CISO Assistant to illustrate the decoupling concept that encourages reusability:
+Here’s an extract of some of the building blocks in Auditcore to illustrate the decoupling concept that encourages reusability:
 
 ![Core Objects](core_objects.png)
 
@@ -117,11 +117,11 @@ For full details, check the [data model documentation](documentation/architectur
 
 ## Decoupling Concept
 
-At the heart of CISO Assistant lies the **decoupling principle**, which enables powerful use cases and major time savings:
+At the heart of Auditcore lies the **decoupling principle**, which enables powerful use cases and major time savings:
 
 - Reuse past assessments across scopes or frameworks,
 - Evaluate a single scope against multiple frameworks simultaneously,
-- Let CISO Assistant handle reporting and consistency checks so you can focus on remediation,
+- Let Auditcore handle reporting and consistency checks so you can focus on remediation,
 - Separate control implementation from compliance tracking.
 
 Here is an illustration of the **decoupling** principle and its advantages:
@@ -329,7 +329,7 @@ Join our [open Discord community](https://discord.gg/qvkaMdQ8da) to interact wit
 
 ## Testing locally 🚀
 
-To run CISO Assistant locally in a straightforward way, you can use Docker compose.
+To run Auditcore locally in a straightforward way, you can use Docker compose.
 
 0. Update docker
 
@@ -356,11 +356,11 @@ _Alternatively_, you can use this variant to build the docker images for your sp
 
 When asked for, enter your email and password for your superuser.
 
-You can then reach CISO Assistant using your web browser at [https://localhost:8443/](https://localhost:8443/)
+You can then reach Auditcore using your web browser at [https://localhost:8443/](https://localhost:8443/)
 
 For the following executions, use "docker compose up" directly.
 
-## Setting up CISO Assistant for development
+## Setting up Auditcore for development
 
 ### Requirements
 
@@ -407,7 +407,7 @@ export EMAIL_USE_TLS=True
 **Other variables**
 
 ```sh
-# CISO Assistant will use SQLite by default, but you can setup PostgreSQL by declaring these variables
+# Auditcore will use SQLite by default, but you can setup PostgreSQL by declaring these variables
 export POSTGRES_NAME=ciso-assistant
 export POSTGRES_USER=ciso-assistantuser
 export POSTGRES_PASSWORD=<XXX>
@@ -415,9 +415,9 @@ export POSTGRES_PASSWORD_FILE=<XXX>  # alternative way to specify password
 export DB_HOST=localhost
 export DB_PORT=5432  # optional, default value is 5432
 
-# CISO Assistant will use filesystem storage backend by default.
+# Auditcore will use filesystem storage backend by default.
 # You can use a S3 Bucket by declaring these variables
-# The S3 bucket must be created before starting CISO Assistant
+# The S3 bucket must be created before starting Auditcore
 export USE_S3=True
 export AWS_STORAGE_BUCKET_NAME=<your-bucket-name>
 export AWS_S3_REGION_NAME=<aws-region>  # optional, e.g., us-east-1
@@ -444,7 +444,7 @@ export EMAIL_USE_TLS_RESCUE=True
 # You can define the email of the first superuser, useful for automation. A mail is sent to the superuser for password initialization
 export CISO_SUPERUSER_EMAIL=<XXX>
 
-# By default, Django secret key is generated randomly at each start of CISO Assistant. This is convenient for quick test,
+# By default, Django secret key is generated randomly at each start of Auditcore. This is convenient for quick test,
 # but not recommended for production, as it can break the sessions (see
 # this [topic](https://stackoverflow.com/questions/15170637/effects-of-changing-djangos-secret-key) for more information).
 # To set a fixed secret key, use the environment variable DJANGO_SECRET_KEY.
@@ -507,7 +507,7 @@ pre-commit install
 poetry run python manage.py migrate
 ```
 
-9. Create a Django superuser, that will be CISO Assistant administrator.
+9. Create a Django superuser, that will be Auditcore administrator.
 
 > If you have set a mailer and CISO_SUPERUSER_EMAIL variable, there's no need to create a Django superuser with `createsuperuser`, as it will be created automatically on first start. You should receive an email with a link to setup your password.
 
@@ -615,7 +615,7 @@ To interact with the API via Swagger or directly with HTTP calls:
 
 When using the interactive Swagger UI, simply log in, the token will be automatically handled for subsequent requests.
 
-## Setting CISO Assistant for production
+## Setting Auditcore for production
 
 The docker-compose-prod.yml highlights a relevant configuration with a Caddy proxy in front of the frontend. It exposes API calls only for SSO. Note that docker-compose.yml exposes the full API, which is not yet recommended for production.
 
@@ -679,7 +679,7 @@ Great care has been taken to follow security best practices. Please report any i
 
 ## License
 
-This repository contains the source code for both the Open Source edition of CISO Assistant (Community Edition), released under the AGPL v3, as well as the commercial edition of CISO Assistant (Pro and Enterprise Editions), released under the intuitem Commercial Software License. This mono-repository approach is adopted for simplicity.
+This repository contains the source code for both the Open Source edition of Auditcore (Community Edition), released under the AGPL v3, as well as the commercial edition of Auditcore (Pro and Enterprise Editions), released under the intuitem Commercial Software License. This mono-repository approach is adopted for simplicity.
 
 All the files within the top-level "enterprise" directory are released under the intuitem Commercial Software License.
 

@@ -1,4 +1,4 @@
-"""CISO Assistant MCP Server"""
+"""Auditcore MCP Server"""
 
 from .server import run_server
 

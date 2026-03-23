@@ -152,7 +152,7 @@
 </script>
 
 <svelte:head>
-	<title>CISO Assistant | {safeTranslate(displayTitle)}</title>
+	<title>Auditcore | {safeTranslate(displayTitle)}</title>
 </svelte:head>
 
 <!-- App Shell -->

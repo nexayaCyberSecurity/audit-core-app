@@ -1,5 +1,5 @@
 """
-simple script to transform the official CIS Excel file to another Excel file for CISO assistant framework conversion tool
+simple script to transform the official CIS Excel file to another Excel file for Auditcore framework conversion tool
 """
 
 import sys
@@ -10,7 +10,7 @@ from openpyxl.utils.exceptions import InvalidFileException
 
 parser = argparse.ArgumentParser(
     prog="convert_cis",
-    description="convert CIS controls offical Excel file to CISO Assistant Excel file",
+    description="convert CIS controls offical Excel file to Auditcore Excel file",
 )
 parser.add_argument("filename", help="name of CIS controls Excel file")
 parser.add_argument("packager", help="name of packager entity")

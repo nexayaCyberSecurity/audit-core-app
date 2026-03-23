@@ -7,13 +7,13 @@ if (Test-Path "db/ciso-assistant.sqlite3") {
     exit 1
 }
 
-Write-Output "Starting CISO Assistant services..."
+Write-Output "Starting Auditcore services..."
 docker compose pull
 
 Write-Output "Initializing the database. This can take a minute, please wait.."
 docker compose up -d
 
-Write-Output "Waiting for CISO Assistant backend to be ready..."
+Write-Output "Waiting for Auditcore backend to be ready..."
 do {
     $backendReady = $false
     try {
@@ -33,4 +33,4 @@ Write-Output "Creating superuser..."
 docker compose exec backend poetry run python manage.py createsuperuser
 
 Write-Output "`nInitialization complete!"
-Write-Output "You can now access CISO Assistant at https://localhost:8443 (or the host:port you've specified)"
+Write-Output "You can now access Auditcore at https://localhost:8443 (or the host:port you've specified)"

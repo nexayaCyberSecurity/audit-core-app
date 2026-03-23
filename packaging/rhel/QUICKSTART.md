@@ -1,4 +1,4 @@
-# CISO Assistant - Quick Start Guide
+# Auditcore - Quick Start Guide
 
 ## Installation (5 minutes)
 

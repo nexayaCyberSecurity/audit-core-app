@@ -1,4 +1,4 @@
-"""EBIOS RM (Risk Management) MCP tools for CISO Assistant"""
+"""EBIOS RM (Risk Management) MCP tools for Auditcore"""
 
 from ..client import (
     make_get_request,

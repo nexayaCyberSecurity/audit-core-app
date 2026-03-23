@@ -2,9 +2,9 @@
 
 ## Overview
 
-The `clone_instance` Django management command creates a complete copy of a CISO Assistant instance by copying both the SQLite database file and evidence attachments directory. This is useful for:
+The `clone_instance` Django management command creates a complete copy of a Auditcore instance by copying both the SQLite database file and evidence attachments directory. This is useful for:
 
-- **Creating backups** of your CISO Assistant instance
+- **Creating backups** of your Auditcore instance
 - **Setting up testing/staging environments** from production data
 - **Migrating instances** to new servers or locations
 - **Creating snapshots** before major updates or changes
@@ -122,7 +122,7 @@ After cloning, to use the new instance:
    export LOCAL_STORAGE_DIRECTORY=/backup/attachments
    ```
 
-3. **Restart the CISO Assistant service** to apply the changes
+3. **Restart the Auditcore service** to apply the changes
 
 ## Best Practices
 

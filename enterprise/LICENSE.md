@@ -1,7 +1,7 @@
 # Intuitem Commercial License
 
 ## Preamble
-Usage of files in this directory and its subdirectories, and of **CISO Assistant PRO** and **Enterprise** features, is governed by the terms set forth in the Intuitem Commercial License below. A valid license from Intuitem is required for any authorized use.
+Usage of files in this directory and its subdirectories, and of **Auditcore PRO** and **Enterprise** features, is governed by the terms set forth in the Intuitem Commercial License below. A valid license from Intuitem is required for any authorized use.
 
 Access to files in this directory and its subdirectories does not constitute permission to use this code. The full terms of the Intuitem Commercial License are detailed herein.
 
@@ -13,7 +13,7 @@ Copyright (c) 2024 intuitem SARL.
 ---
 
 ## License Overview
-This license governs the use of the **CISO Assistant** source code located in the `"enterprise"` directory (the "Software"). These components are not part of the Community Edition and are subject to the following terms.
+This license governs the use of the **Auditcore** source code located in the `"enterprise"` directory (the "Software"). These components are not part of the Community Edition and are subject to the following terms.
 
 ---
 
@@ -28,7 +28,7 @@ This license governs the use of the **CISO Assistant** source code located in th
 
 ## Scope
 - This license applies to the content of the `"enterprise"` directory.
-- Binaries for **CISO Assistant** located directly under the `ghcr.io/intuitem/` namespace are also released under this Intuitem Commercial License.
+- Binaries for **Auditcore** located directly under the `ghcr.io/intuitem/` namespace are also released under this Intuitem Commercial License.
 - Third-party components incorporated into the Software are licensed under their respective original licenses.
 
 ---

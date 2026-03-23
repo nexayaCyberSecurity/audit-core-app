@@ -1,5 +1,5 @@
 /**
- * Custom error class for CISO Assistant operations
+ * Custom error class for Auditcore operations
  */
 export class CisoAssistantError extends Error {
   constructor(

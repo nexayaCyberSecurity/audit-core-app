@@ -11,6 +11,6 @@ else
   sleep 50
   echo "initialize your superuser account..."
   docker compose exec backend poetry run python manage.py createsuperuser
-  echo "connect to ciso assistant on https://localhost:9443"
+  echo "connect to Auditcore on https://localhost:9443"
   echo "for successive runs you can now use docker compose up"
 fi

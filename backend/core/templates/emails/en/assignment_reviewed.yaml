@@ -1,4 +1,4 @@
-subject: "CISO Assistant: Your assignment on '${assessment_name}' has been ${decision}"
+subject: "Auditcore: Your assignment on '${assessment_name}' has been ${decision}"
 body: |
   Hello,
 
@@ -8,6 +8,6 @@ body: |
   - Decision: ${decision}
   ${reviewer_observation}
 
-  Please log in to your CISO Assistant portal for more details: [Go to CISO Assistant](${ciso_assistant_url}/auditee-dashboard)
+  Please log in to your Auditcore portal for more details: [Go to Auditcore](${ciso_assistant_url}/auditee-dashboard)
 
   Thank you.

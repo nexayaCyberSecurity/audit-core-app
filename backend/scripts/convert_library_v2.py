@@ -1,5 +1,5 @@
 """
-Convert Library v2 - Build a CISO Assistant YAML library from a v2 Excel file
+Convert Library v2 - Build a Auditcore YAML library from a v2 Excel file
 
 This script processes an Excel file in v2 format (with *_meta and *_content tabs),
 extracts all declared objects, and generates a fully structured YAML library.
@@ -32,7 +32,7 @@ from collections import Counter
 
 SCRIPT_VERSION = "2.1"
 
-# Maximum length for 'name' fields as enforced by the CISO Assistant database.
+# Maximum length for 'name' fields as enforced by the Auditcore database.
 NAME_MAX_LENGTH = 200
 
 # --- Compatibility modes definition ------------------------------------------

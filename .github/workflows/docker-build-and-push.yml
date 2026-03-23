@@ -64,7 +64,7 @@ jobs:
           tags: |
             type=raw,value=${{ needs.prepare.outputs.version }}
           labels: |
-            org.opencontainers.image.title=CISO Assistant Frontend
+            org.opencontainers.image.title=Auditcore Frontend
             org.opencontainers.image.description=An open-source GRC platform for cybersecurity compliance and risk management
             org.opencontainers.image.vendor=intuitem
             org.opencontainers.image.licenses=AGPL-3.0
@@ -123,7 +123,7 @@ jobs:
           tags: |
             type=raw,value=${{ needs.prepare.outputs.version }}
           labels: |
-            org.opencontainers.image.title=CISO Assistant Backend
+            org.opencontainers.image.title=Auditcore Backend
             org.opencontainers.image.description=An open-source GRC platform for cybersecurity compliance and risk management
             org.opencontainers.image.vendor=intuitem
             org.opencontainers.image.licenses=AGPL-3.0
@@ -161,7 +161,7 @@ jobs:
           CREATED="$(date -u +'%Y-%m-%dT%H:%M:%SZ')"
 
           docker buildx imagetools create \
-            --annotation "index:org.opencontainers.image.title=CISO Assistant Frontend" \
+            --annotation "index:org.opencontainers.image.title=Auditcore Frontend" \
             --annotation "index:org.opencontainers.image.description=An open-source GRC platform for cybersecurity compliance and risk management" \
             --annotation "index:org.opencontainers.image.vendor=intuitem" \
             --annotation "index:org.opencontainers.image.licenses=AGPL-3.0" \
@@ -177,7 +177,7 @@ jobs:
             "ghcr.io/$REPO/frontend:$VERSION-arm64"
 
           docker buildx imagetools create \
-            --annotation "index:org.opencontainers.image.title=CISO Assistant Backend" \
+            --annotation "index:org.opencontainers.image.title=Auditcore Backend" \
             --annotation "index:org.opencontainers.image.description=An open-source GRC platform for cybersecurity compliance and risk management" \
             --annotation "index:org.opencontainers.image.vendor=intuitem" \
             --annotation "index:org.opencontainers.image.licenses=AGPL-3.0" \

@@ -1,4 +1,4 @@
-"""HTTP client utilities for CISO Assistant API"""
+"""HTTP client utilities for Auditcore API"""
 
 import requests
 import sys

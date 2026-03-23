@@ -1,4 +1,4 @@
-"""IAM model for CISO Assistant
+"""IAM model for Auditcore
 Inspired from Azure IAM model"""
 
 from __future__ import annotations
@@ -549,7 +549,7 @@ class UserManager(BaseUserManager):
             try:
                 user.mailing(
                     email_template_name=template_name,
-                    subject=_("Welcome to Ciso Assistant!"),
+                    subject=_("Welcome to Auditcore!"),
                 )
             except Exception as exception:
                 print(f"sending email to {email} failed")
@@ -1013,7 +1013,7 @@ def _iter_assignment_lites_for_user(user: AbstractBaseUser | AnonymousUser):
 
 
 class RoleAssignment(NameDescriptionMixin, FolderMixin):
-    """fundamental class for CISO Assistant RBAC model, similar to Azure IAM model"""
+    """fundamental class for Auditcore RBAC model, similar to Azure IAM model"""
 
     if TYPE_CHECKING:
         perimeter_folders: Any  # pragma: no cover

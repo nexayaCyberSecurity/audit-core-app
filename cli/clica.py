@@ -28,7 +28,7 @@ load_dotenv(".clica.env")
 
 @click.group()
 def cli():
-    """CLICA is the CLI tool to interact with CISO Assistant REST API."""
+    """CLICA is the CLI tool to interact with Auditcore REST API."""
     pass
 
 

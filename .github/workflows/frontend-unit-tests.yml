@@ -1,4 +1,4 @@
-name: Unit tests on CISO Assistant frontend
+name: Unit tests on Auditcore frontend
 permissions:
   contents: read
 

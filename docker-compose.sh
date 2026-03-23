@@ -7,12 +7,12 @@ if [ -d ./db ]; then
   echo "For a clean start, you can remove the db folder, and then run 'docker compose rm -fs' and start over"
   exit 1
 fi
-echo "Starting CISO Assistant services..."
+echo "Starting Auditcore services..."
 docker compose pull
 echo "Initializing the database. This can take up to 2 minutes, please wait.."
 docker compose up -d
 
-echo "Waiting for CISO Assistant backend to be ready..."
+echo "Waiting for Auditcore backend to be ready..."
 until docker compose exec -T backend curl -f http://localhost:8000/api/health/ >/dev/null 2>&1; do
   echo "Backend is not ready - waiting 10s..."
   sleep 10
@@ -23,4 +23,4 @@ echo "Creating superuser..."
 docker compose exec backend poetry run python manage.py createsuperuser
 
 echo -e "Initialization complete!"
-echo "You can now access CISO Assistant at https://localhost:8443 (or the host:port you've specified)"
+echo "You can now access Auditcore at https://localhost:8443 (or the host:port you've specified)"

@@ -51,7 +51,7 @@
 					<QR
 						data={totp.totp_url.replace(
 							/issuer=[^&]+/,
-							'issuer=' + encodeURIComponent('CISO Assistant')
+							'issuer=' + encodeURIComponent('Auditcore')
 						)}
 						anchorInnerFill="black"
 						anchorOuterFill="black"

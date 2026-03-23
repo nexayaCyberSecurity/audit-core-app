@@ -14,12 +14,12 @@ fi
 
 cp ./docker-compose-custom.yml ../docker-compose.yml
 
-echo "Starting CISO Assistant services..."
+echo "Starting Auditcore services..."
 docker compose -f ./docker-compose-custom.yml pull
 echo "Initializing the database. This can take up to 3 minutes, please wait.."
 docker compose -f ./docker-compose-custom.yml up -d
 
-echo "Waiting for CISO Assistant backend to be ready..."
+echo "Waiting for Auditcore backend to be ready..."
 until docker compose -f ./docker-compose-custom.yml exec -T backend curl -f http://localhost:8000/api/health/ >/dev/null 2>&1; do
   echo "Backend is not ready - waiting 10s..."
   sleep 10
@@ -30,4 +30,4 @@ echo "Creating superuser..."
 docker compose -f ./docker-compose-custom.yml exec backend poetry run python manage.py createsuperuser
 
 echo -e "Initialization complete!"
-echo "You can now access CISO Assistant at https://localhost:8443 (or the host:port you've specified)"
+echo "You can now access Auditcore at https://localhost:8443 (or the host:port you've specified)"

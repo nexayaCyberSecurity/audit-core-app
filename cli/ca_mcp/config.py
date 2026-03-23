@@ -1,4 +1,4 @@
-"""Configuration module for CISO Assistant MCP server"""
+"""Configuration module for Auditcore MCP server"""
 
 import os
 from dotenv import load_dotenv

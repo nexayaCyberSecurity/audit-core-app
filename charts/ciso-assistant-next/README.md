@@ -2,7 +2,7 @@
 
 ![Version: 0.8.5](https://img.shields.io/badge/Version-0.8.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v3.13.6](https://img.shields.io/badge/AppVersion-v3.13.6-informational?style=flat-square)
 
-A Helm chart for CISO Assistant k8s's deployment
+A Helm chart for Auditcore k8s's deployment
 
 **Homepage:** <https://intuitem.com>
 
@@ -104,19 +104,19 @@ helm install ciso-assistant-release oci://ghcr.io/intuitem/helm-charts/ce/ciso-a
 | global.commonLabels | object | `{}` | Labels to add to all deployed objects |
 | global.domain | string | `"octopus.foo.bar"` | Default domain used by all components # Used for ingresses, certificates, environnement vars, etc. |
 | global.extraAllowedHosts | string | `""` | Extra allowed hosts (comma separated, without spaces) |
-| global.image.imagePullPolicy | string | `"IfNotPresent"` | If defined, a imagePullPolicy applied to all CISO Assistant deployments |
-| global.image.registry | string | `"ghcr.io"` | If defined, a registry applied to all CISO Assistant deployments |
-| global.image.tag | string | `""` | Overrides the global CISO Assistant image tag whose default is the chart appVersion |
+| global.image.imagePullPolicy | string | `"IfNotPresent"` | If defined, a imagePullPolicy applied to all Auditcore deployments |
+| global.image.registry | string | `"ghcr.io"` | If defined, a registry applied to all Auditcore deployments |
+| global.image.tag | string | `""` | Overrides the global Auditcore image tag whose default is the chart appVersion |
 | global.imagePullSecrets | list | `[]` | Secrets with credentials to pull images from a private registry |
 | global.nodeSelector | object | `{}` | Default node selector for all components |
 | global.securityContext | object | `{}` | Toggle and define pod-level security context |
 | global.tls | bool | `false` | Globally enable TLS (URLs, etc.) |
 | global.tolerations | list | `[]` | Default tolerations for all components |
 | ingress.annotations | object | `{}` | Additional ingress annotations |
-| ingress.enabled | bool | `false` | Enable an ingress resource for the CISO Assistant |
+| ingress.enabled | bool | `false` | Enable an ingress resource for the Auditcore |
 | ingress.ingressClassName | string | `""` | Defines which ingress controller will implement the resource |
 | ingress.labels | object | `{}` | Additional ingress labels |
-| ingress.path | string | `"/"` | The path to CISO Assistant |
+| ingress.path | string | `"/"` | The path to Auditcore |
 | ingress.pathType | string | `"Prefix"` | Ingress path type. One of `Exact`, `Prefix` or `ImplementationSpecific` |
 | ingress.tls.certificateSecret | object | `{}` | Custom TLS certificate as secret # Note: 'key' and 'certificate' are expected in PEM format |
 | ingress.tls.enabled | bool | `false` | Enable TLS for the ingress |
@@ -130,7 +130,7 @@ helm install ciso-assistant-release oci://ghcr.io/intuitem/helm-charts/ce/ciso-a
 | postgresql.primary.persistence.size | string | `"5Gi"` | PostgreSQL persistant volume size (default 8Gi). |
 | serviceAccount.annotations | object | `{}` | Annotations applied to created service account |
 | serviceAccount.automountServiceAccountToken | bool | `true` | Automount API credentials for the Service Account |
-| serviceAccount.create | bool | `false` | Create a service account for CISO Assistant |
+| serviceAccount.create | bool | `false` | Create a service account for Auditcore |
 | serviceAccount.labels | object | `{}` | Labels applied to created service account |
 | serviceAccount.name | string | `""` (defaults to fullname) | Service account name |
 

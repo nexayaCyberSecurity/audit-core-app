@@ -38,7 +38,7 @@ auth_data = dict()
 
 @click.group()
 def cli():
-    """The CISO Assistant dispatcher is a command line tool that consumes messages from a Kafka topic and processes them."""
+    """The Auditcore dispatcher is a command line tool that consumes messages from a Kafka topic and processes them."""
     pass
 
 

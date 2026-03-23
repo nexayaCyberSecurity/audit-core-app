@@ -117,7 +117,7 @@ def init_config(y, interactive):
         # Prompt interactively for each setting, using env variables as defaults.
 
         rest_url = click.prompt(
-            "Enter the API URL for the dispatcher. This is the exposed URL of the CISO Assistant backend's API.",
+            "Enter the API URL for the dispatcher. This is the exposed URL of the Auditcore backend's API.",
             default=os.getenv("API_URL", "https://localhost:8443"),
         )
         verify_default = os.getenv("VERIFY_CERTIFICATE", "True") == "True"
@@ -138,12 +138,12 @@ def init_config(y, interactive):
 
         if authentication_mode == "credentials":
             user_email = click.prompt(
-                "Enter the email of the CISO Assistant user account. This is the user account that will be used to authenticate the dispatcher to the CISO Assistant API.",
+                "Enter the email of the Auditcore user account. This is the user account that will be used to authenticate the dispatcher to the Auditcore API.",
                 default=os.getenv("USER_EMAIL", "user@company.org"),
             )
             # Use confirmation_prompt for passwords to ensure they match.
             user_password = click.prompt(
-                "Enter the password of the CISO Assistant user account",
+                "Enter the password of the Auditcore user account",
                 hide_input=True,
                 confirmation_prompt=True,
                 default=os.getenv("USER_PASSWORD", ""),

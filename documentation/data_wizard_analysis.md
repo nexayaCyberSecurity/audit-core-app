@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Data Wizard is located in `/backend/data_wizard/`. It supports importing data from Excel/CSV files into CISO Assistant.
+The Data Wizard is located in `/backend/data_wizard/`. It supports importing data from Excel/CSV files into Auditcore.
 
 ## Supported Model Types
 
