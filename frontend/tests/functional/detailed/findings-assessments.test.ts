@@ -98,7 +98,7 @@ test('user can create findings inside a follow up', async ({
 			name: vars.evidenceName + ' from followup',
 			description: vars.description,
 			attachment: vars.file,
-			link: 'https://intuitem.com/'
+			link: 'https://auditcore.io/'
 		});
 		await evidencesPage.form.saveButton.click();
 		await findingsAssessmentsPage.page.waitForLoadState('networkidle');

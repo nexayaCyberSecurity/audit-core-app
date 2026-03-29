@@ -643,7 +643,7 @@ export class TestContent {
 					status: 'To do',
 					//eta: '2025-01-01',
 					//expiry_date: '2025-05-01',
-					//link: 'https://intuitem.com/',
+					//link: 'https://auditcore.io/',
 					//effort: 'Large',
 					folder: vars.folderName
 					//category: vars.referenceControl.category
@@ -663,7 +663,7 @@ export class TestContent {
 					status: 'Active'
 					//eta: '2025-12-31',
 					//expiry_date: '2026-02-25',
-					//link: 'https://intuitem.com/community/',
+					//link: 'https://auditcore.io/community/',
 					//effort: 'Medium',
 					//category: vars.referenceControl2.category
 					// csf_function: vars.referenceControl2.csf_function
@@ -703,7 +703,7 @@ export class TestContent {
 					description: vars.description,
 					attachment: vars.file,
 					folder: vars.folderName,
-					link: 'https://intuitem.com/'
+					link: 'https://auditcore.io/'
 				},
 				editParams: {
 					name: '',
