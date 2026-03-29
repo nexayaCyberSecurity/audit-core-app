@@ -4,7 +4,7 @@
 
 A Helm chart for Auditcore k8s's deployment
 
-**Homepage:** <https://intuitem.com>
+**Homepage:** <https://auditcore.io>
 
 ## Source Code
 

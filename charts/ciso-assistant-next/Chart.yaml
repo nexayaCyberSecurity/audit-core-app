@@ -4,8 +4,8 @@ description: A Helm chart for Auditcore k8s's deployment
 type: application
 version: 0.8.5
 appVersion: "v3.13.6"
-icon: https://intuitem.com/ciso-assistant.svg
-home: https://intuitem.com
+icon: https://auditcore.io/ciso-assistant.svg
+home: https://auditcore.io
 sources:
   - https://github.com/intuitem/ciso-assistant-community
 dependencies:

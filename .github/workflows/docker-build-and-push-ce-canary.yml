@@ -66,7 +66,7 @@ jobs:
             org.opencontainers.image.description=An open-source GRC platform for cybersecurity compliance and risk management
             org.opencontainers.image.vendor=intuitem
             org.opencontainers.image.licenses=AGPL-3.0
-            org.opencontainers.image.url=https://intuitem.com
+            org.opencontainers.image.url=https://auditcore.io
             org.opencontainers.image.documentation=https://intuitem.gitbook.io/ciso-assistant
       - name: Build and Push
         uses: docker/build-push-action@v6
@@ -125,7 +125,7 @@ jobs:
             org.opencontainers.image.description=An open-source GRC platform for cybersecurity compliance and risk management
             org.opencontainers.image.vendor=intuitem
             org.opencontainers.image.licenses=AGPL-3.0
-            org.opencontainers.image.url=https://intuitem.com
+            org.opencontainers.image.url=https://auditcore.io
             org.opencontainers.image.documentation=https://intuitem.gitbook.io/ciso-assistant
       - name: Build and Push
         uses: docker/build-push-action@v6
@@ -164,7 +164,7 @@ jobs:
             --annotation "index:org.opencontainers.image.description=An open-source GRC platform for cybersecurity compliance and risk management" \
             --annotation "index:org.opencontainers.image.vendor=intuitem" \
             --annotation "index:org.opencontainers.image.licenses=AGPL-3.0" \
-            --annotation "index:org.opencontainers.image.url=https://intuitem.com" \
+            --annotation "index:org.opencontainers.image.url=https://auditcore.io" \
             --annotation "index:org.opencontainers.image.documentation=https://intuitem.gitbook.io/ciso-assistant" \
             --annotation "index:org.opencontainers.image.source=https://github.com/$REPO" \
             --annotation "index:org.opencontainers.image.version=$VERSION" \
@@ -181,7 +181,7 @@ jobs:
             --annotation "index:org.opencontainers.image.description=An open-source GRC platform for cybersecurity compliance and risk management" \
             --annotation "index:org.opencontainers.image.vendor=intuitem" \
             --annotation "index:org.opencontainers.image.licenses=AGPL-3.0" \
-            --annotation "index:org.opencontainers.image.url=https://intuitem.com" \
+            --annotation "index:org.opencontainers.image.url=https://auditcore.io" \
             --annotation "index:org.opencontainers.image.documentation=https://intuitem.gitbook.io/ciso-assistant" \
             --annotation "index:org.opencontainers.image.source=https://github.com/$REPO" \
             --annotation "index:org.opencontainers.image.version=$VERSION" \

@@ -1,0 +1,41 @@
+name: Deploy to Staging
+
+on:
+  push:
+    branches:
+      - staging
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: eu-west-2
+
+      - name: Login to ECR
+        uses: aws-actions/amazon-ecr-login@v1
+
+      - name: Build and push backend
+        run: |
+          docker build --platform linux/amd64 -t auditcore/staging_backend ./backend
+          docker tag auditcore/staging_backend:latest 145023094191.dkr.ecr.eu-west-2.amazonaws.com/auditcore/staging_backend:latest
+          docker push 145023094191.dkr.ecr.eu-west-2.amazonaws.com/auditcore/staging_backend:latest
+
+      - name: Build and push frontend
+        run: |
+          docker build --platform linux/amd64 -t auditcore/staging_frontend ./frontend
+          docker tag auditcore/staging_frontend:latest 145023094191.dkr.ecr.eu-west-2.amazonaws.com/auditcore/staging_frontend:latest
+          docker push 145023094191.dkr.ecr.eu-west-2.amazonaws.com/auditcore/staging_frontend:latest
+
+      - name: Deploy to ECS
+        run: |
+          aws ecs update-service --cluster auditcore-staging --service auditcore-backend-staging-service-aj58xa3l --force-new-deployment
+          aws ecs update-service --cluster auditcore-staging --service auditcore-frontend-staging-service-r42s8wh2 --force-new-deployment

@@ -5,9 +5,9 @@ Star the project 🌟 to get releases notification and help growing the communit
 <p align="center">
     <a href="https://trendshift.io/repositories/9343" target="_blank"><img src="https://trendshift.io/api/badge/repositories/9343" alt="intuitem%2Fciso-assistant-community | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
     <br />
-    <a href="https://intuitem.com">intuitem.com</a>
+    <a href="https://auditcore.io">intuitem.com</a>
     ·
-    <a href="https://intuitem.com/trial">SaaS Free trial</a>
+    <a href="https://auditcore.io/trial">SaaS Free trial</a>
     ·
     <a href="https://intuitem.releasedhub.com/ciso-assistant-public/roadmap/d738f2fd">Roadmap</a>
     ·
@@ -63,7 +63,7 @@ We’re constantly evolving with input from users and customers. Like an octopus
 ## Quick Start 🚀
 
 > [!TIP]
-> The easiest way to get started is through the [free trial of cloud instance available here](https://intuitem.com/trial).
+> The easiest way to get started is through the [free trial of cloud instance available here](https://auditcore.io/trial).
 
 Alternatively, once you have _Docker_ and _Docker-compose_ installed, on your workstation or server:
 
@@ -101,7 +101,7 @@ The docker compose file can be adjusted to pass extra parameters to suit your se
 
 Upcoming features are listed on the roadmap.
 
-Auditcore is developed and maintained by [Intuitem](https://intuitem.com/), a company specialized in Cybersecurity, Cloud, and Data/AI.
+Auditcore is developed and maintained by [Intuitem](https://auditcore.io/), a company specialized in Cybersecurity, Cloud, and Data/AI.
 
 ---
 
@@ -325,7 +325,7 @@ Join our [open Discord community](https://discord.gg/qvkaMdQ8da) to interact wit
 
 ## Testing the cloud version
 
-> The fastest and easiest way to get started is through the [free trial of cloud instance available here](https://intuitem.com/trial).
+> The fastest and easiest way to get started is through the [free trial of cloud instance available here](https://auditcore.io/trial).
 
 ## Testing locally 🚀
 
